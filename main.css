@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.625);
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    
+}
+.logo{
+    margin-left: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family: 'Dela Gothic One', cursive;
+}
+.navInside{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+
+}
+ul{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+li{
+    list-style-type: none;
+    justify-content: flex-start;
+}
+.navtext{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 20px;
+}
+.button1{
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 20px;
+    
+}
+.fa-solid.fa-bars{
+    display: none;
+    margin-right: 20px;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+.button1:hover{
+    background-color: white;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.5s;
+    transform: scale(2);
+}
+.card{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/55839223e4b0c020dcf488a5/1643899058475-9FAA9J66P7WGG9I5WXJ0/AdobeStock_136519023.jpeg?format=2500w);
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+
+}
+
+@media screen and (max-width: 800px) {
+    .fa-solid.fa-bars{
+        display: inline;
+        margin-left: 40px;
+    }
+    .navtext{
+        display: none;
+    }
+    .button1{
+        display: none;
+    }
+    .logo{
+        margin-left: 40px;
+
+    }
+    
+}
+.bars:hover{
+    background-color: black;
+}
+.text1{
+    font-size: 100px;
+    top: 15%;
+    left: 44%;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+
+}
+.text2{
+    font-size: 60px;
+    position: absolute;
+    z-index: 2;
+    top: 23%;
+    left: 34%;
+    color: rgb(88, 33, 9);
+    width: 600px;
+    font-family: 'Dela Gothic One', cursive;
+    transition: 1s;
+}
+
+.boxes{
+    display: flex;
+    width: 100vw;
+    height: 450px;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+.box{
+    background-color: rgb(178, 178, 178);
+    width: 350px;
+    height: 350px;
+    transition: 0.5s;
+}
+.box:hover{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    background-color: rgb(144, 90, 70);
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+img{
+    width: 350px;
+    height: 225px;
+    transition: 0.5s;
+}
+
+.boxtexts{
+    padding: 20px;
+}
+.boxheading{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.boxread{
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .box{
+        width: 250px;
+    }
+    img{
+        width: 250px;
+    }
+    .text2{
+        width: 400px;
+        height: 300px;
+        left: 41%;
+    }
+    
+}
+.boxread a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and(max-width: 800px) {
+    .box{
+        width: 500px;
+        height: 350px;
+    }
+    img{
+        width: 100%;
+    
+    }
+    .boxes{
+        height: 1200px;
+        flex-wrap: wrap;
+    }
+    .text2{
+        width: 400px;
+    }
+}
